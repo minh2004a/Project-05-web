@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -136,4 +134,181 @@ a {
 .header__btn {
     min-width: 113px;
     line-height: 52px;
+}
+
+/* ==========
+    Hero 
+============= */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+.hero__content {
+    max-width: 540px;
+}
+
+.hero__panel {
+    padding-left: 30px;
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__panel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    transform: translateY(-50%);
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: var(--color-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero__heading span {
+    color: #7264d6;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.hero__form {
+    margin-top: 40px;
+    position: relative;
+}
+
+.hero__form input {
+    border: none;
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 23px;
+    color: #696d76;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero__form input::placeholder {
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__form-submit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    min-width: 149px;
+    line-height: 58px;
+    border-radius: 8px;
+    background: #7264d6;
+
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.hero__media > div {
+    position: relative;
+}
+
+.hero-desposite {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: inline-flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero-desposite__text {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-desposite__price {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-status {
+    position: absolute;
+    top: 127px;
+    right: -177px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.hero-status__value {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-status__text {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero-secure-badge {
+    position: absolute;
+    bottom: 61px;
+    right: -74px;
+    display: flex;
+    column-gap: 11px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-secure-badge__amount {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-secure-badge__text {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
 }
