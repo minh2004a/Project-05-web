@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: #212832;
+}
+
 html {
     font-family: "Open Sans", sans-serif;
     font-size: 62.5%;
@@ -13,9 +17,123 @@ body {
     font-size: 1.6rem;
 }
 
+a {
+    text-decoration: none;
+}
 /* Common */
 .container {
     width: 1170px;
     max-width: calc(100% - 42px);
     margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 149px;
+    line-height: 58px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    /* text */
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(33, 40, 50, 0.2);
+}
+/* =========
+    Header
+============ */
+.header {
+    margin-top: 42px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    position: relative;
+    display: inline-block;
+    padding: 8px 23px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    transform-origin: center;
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        font-weight 0.2s ease;
+}
+
+.header__item::before {
+    content: attr(data-text);
+    font-weight: 600;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.header__item:hover:not(.header__item--active) {
+    color: var(--color-primary);
+    font-weight: 600;
+    transform: scale(1.04);
+}
+
+.header__item--active {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.header__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: calc(100% - 46px);
+    border-radius: 10px;
+    background: #7264d6;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+.header__item--active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.header__ctn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.header__ctn-link {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header__btn {
+    min-width: 113px;
+    line-height: 52px;
 }
