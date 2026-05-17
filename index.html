@@ -1,166 +1,183 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project 05</title>
-        <!-- CSS style -->
-        <link rel="stylesheet" href="./assets/reset.css" />
-        <link rel="stylesheet" href="./assets/styles.css" />
-        <!-- GG font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <!-- ===========
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 05</title>
+  <!-- CSS style -->
+  <link rel="stylesheet" href="./assets/reset.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <!-- GG font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ===========
             Header
         ================
         -->
-        <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <!-- Logo -->
-                    <div class="logo">
-                        <a href="#!">
-                            <img
-                                src="./icons/logo.svg"
-                                alt="CeloBank"
-                                class="logo__icon"
-                            />
-                        </a>
-                    </div>
-                    <!-- Navication -->
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li>
-                                <a
-                                    
-                                    href="#!"
-                                    class="header__item header__item--active"
-                                    data-text="Home"
-                                >
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#!"
-                                    class="header__item"
-                                    data-text="Products"
-                                    >Products</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#!"
-                                    class="header__item"
-                                    data-text="Features"
-                                    >Features</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#!"
-                                    class="header__item"
-                                    data-text="Blog"
-                                    >Blog</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- Action Btn -->
-                    <div class="header__ctn">
-                        <a href="#!" class="header__ctn-link">Log in</a>
-                        <a href="#!" class="btn header__btn">Sign up</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- =========
-         Hero
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#!">
+            <img src="./icons/logo.svg" alt="CeloBank" class="logo__icon" />
+          </a>
+        </div>
+        <!-- Navication -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li>
+              <a href="#!" class="header__item header__item--active" data-text="Home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="header__item" data-text="Products">Products</a>
+            </li>
+            <li>
+              <a href="#!" class="header__item" data-text="Features">Features</a>
+            </li>
+            <li>
+              <a href="#!" class="header__item" data-text="Blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Action Btn -->
+        <div class="header__ctn">
+          <a href="#!" class="header__ctn-link">Log in</a>
+          <a href="#!" class="btn header__btn">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- =========
+            Hero
          =============
           -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <!-- Hero content -->
-                    <section class="hero__content">
-                        <span class="hero__panel">Digital Smart Wallet</span>
-                        <h1 class="hero__heading">
-                            Digital
-                            <span>Payment</span>
-                            For Everyone.
-                        </h1>
-                        <p class="hero__desc">
-                            We bring together eveything that’s required to build
-                            websites and apps that accept payments and send
-                            payouts globally. We are the best platform.
-                        </p>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <!-- Hero content -->
+        <section class="hero__content">
+          <span class="hero__panel">Digital Smart Wallet</span>
+          <h1 class="hero__heading">
+            Digital
+            <span>Payment</span>
+            For Everyone.
+          </h1>
+          <p class="hero__desc">
+            We bring together eveything that’s required to build
+            websites and apps that accept payments and send
+            payouts globally. We are the best platform.
+          </p>
 
-                        <form action="#" method="POST" class="hero__form">
-                            <input
-                                class="hero__form-input"
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Your email address"
-                            />
-                            <button type="submit" class="hero__form-submit">
-                                Get Started
-                            </button>
-                        </form>
-                    </section>
-                    <!-- Hero media -->
-                    <div class="hero__media">
-                        <div>
-                            <img
-                                src="./images/hero-phone.svg"
-                                alt=""
-                                class="hero__img"
-                            />
-
-                            <div class="hero-desposite">
-                                <img
-                                    src="./icons/dowload.svg"
-                                    alt=""
-                                    class="hero-desposite__icon"
-                                />
-                                <span class="hero-desposite__text">
-                                    Deposite
-                                </span>
-                                <span class="hero-desposite__price">
-                                    $32000
-                                </span>
-                            </div>
-
-                            <div class="hero-status">
-                                <span class="hero-status__value">0%</span>
-                                <span class="hero-status__text">Interest</span>
-                            </div>
-                            <div class="hero-secure-badge">
-                                <img
-                                    src="./icons/hero-badge-dola.svg"
-                                    alt=""
-                                    class="hero-secure-badge__icon"
-                                />
-                                <div>
-                                    <strong class="hero-secure-badge__amount"
-                                        >$1.310</strong
-                                    >
-                                    <p class="hero-secure-badge__text">
-                                        Secured Funds
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <form action="#" method="POST" class="hero__form">
+            <input class="hero__form-input" type="email" name="email" id="email" placeholder="Your email address" />
+            <button type="submit" class="hero__form-submit">
+              Get Started
+            </button>
+          </form>
         </section>
-        <script type="module" src="./src/main.js"></script>
-    </body>
+        <!-- Hero media -->
+        <div class="hero__media">
+          <div>
+            <img src="./images/hero-phone.svg" alt="" class="hero__img" />
+
+            <div class="hero-desposite">
+              <img src="./icons/dowload.svg" alt="" class="hero-desposite__icon" />
+              <span class="hero-desposite__text">
+                Deposite
+              </span>
+              <span class="hero-desposite__price">
+                $32000
+              </span>
+            </div>
+
+            <div class="hero-status">
+              <span class="hero-status__value">0%</span>
+              <span class="hero-status__text">Interest</span>
+            </div>
+            <div class="hero-secure-badge">
+              <img src="./icons/hero-badge-dola.svg" alt="" class="hero-secure-badge__icon" />
+              <div>
+                <strong class="hero-secure-badge__amount">$1.310</strong>
+                <p class="hero-secure-badge__text">
+                  Secured Funds
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main style="height: 5000px">
+    <!-- ===========
+            Work
+         =========== -->
+    <section class="work">
+      <div class="container">
+        <div class="work__inner">
+          <!-- Work media -->
+          <div class="work__media">
+            <img src="./images/work-bg-01.svg" alt="" class="work__img-bg" />
+
+            <!-- Decor -->
+
+            <img src="./icons/bank.svg" alt="" class="work__icon-bank">
+
+
+            <div class="work__success-card">
+              <div class="work__img-success">
+                <img src="./icons/work-succes.svg" alt="">
+              </div>
+
+              <div class="work__success-cotent">
+                <h3 class="work__success-title">
+                  Congratulations
+                </h3>
+                <p class="work__success-text">Your account activated</p>
+              </div>
+            </div>
+          </div>
+          <!-- Work content -->
+          <section class="work__content">
+            <p class="section-eyebrow">Digital Smart Wallet</p>
+            <h2 class="section-heading">How It Works</h2>
+
+            <div class="work__list">
+              <!--Work step 1 -->
+              <div class="work__step">
+                <h3 class="work__step-title">1. Open a High Interest Checking account</h3>
+                <p class="work__step-desc">Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!</p>
+              </div>
+
+              <!--Work step 2 -->
+              <div class="work__step">
+                <h3 class="work__step-title">2. 10 point-of-sale transactions each Month that are at least $10 each.</h3>
+                <p class="work__step-desc">Be sure to use your rewards checking account as often as possible in order to accue APYI</p>
+              </div>
+
+              <!--Work step 3 -->
+              <div class="work__step">
+                <h3 class="work__step-title">3. Receive up to 5.50% APY</h3>
+                <p class="work__step-desc">The APY you earn will be based on your account balance and satisfying the transaction requirement.</p>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>

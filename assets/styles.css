@@ -47,6 +47,35 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(33, 40, 50, 0.2);
 }
+
+.section-eyebrow {
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.section-eyebrow::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #696d77;
+    content: "";
+    width: 18px;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.section-heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
 /* =========
     Header
 ============ */
@@ -311,4 +340,106 @@ a {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1;
+}
+
+/* ================
+    Work
+    =============== */
+
+.work {
+    margin-top: 190px;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work__media {
+    position: relative;
+    width: 470px;
+    height: 619px;
+}
+
+.work__content {
+    width: 40%;
+}
+
+.work__img-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 0;
+}
+
+.work__media::after {
+    position: absolute;
+    content: "";
+    background: url("../images/work-01.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.work__icon-bank {
+    position: absolute;
+    top: 78px;
+    right: 62px;
+}
+
+.work__success-card {
+    position: absolute;
+    bottom: 96px;
+    right: -100px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+    column-gap: 10px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+    z-index: 2;
+}
+
+.work__success-title {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.work__success-text {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+}
+
+.work__list {
+    margin-top: 70px;
+}
+
+.work__step:not(.work__step:first-child) {
+    margin-top: 30px;
+}
+
+.work__step-title {
+    color: var(--color-primary);
+
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.work__step-desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
