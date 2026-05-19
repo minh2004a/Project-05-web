@@ -9,7 +9,10 @@ function setActiveNavItem(item) {
 
 navItems.forEach((item) => {
     item.addEventListener("click", (e) => {
-        e.preventDefault();
+        if (item.getAttribute("href") === "#!") {
+            e.preventDefault();
+        }
+
         setActiveNavItem(item);
     });
 });
