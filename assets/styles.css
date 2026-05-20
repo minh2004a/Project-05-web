@@ -613,3 +613,120 @@ Payment
     font-weight: 600;
     line-height: normal;
 }
+
+/* ========= Wallet =========== */
+.wallet {
+    margin-top: 160px;
+}
+
+.wallet__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet__content {
+    width: 40%;
+}
+
+.wallet__media {
+    position: relative;
+    width: min(100%, 470px);
+    height: 600px;
+}
+
+.wallet__bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wallet__person {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+.wallet__list {
+    margin-top: 28px;
+}
+
+.wallet__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.wallet__item::before {
+    flex-shrink: 0;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+.wallet__item:not(:first-child) {
+    margin-top: 18px;
+}
+
+.wallet__btn {
+    margin-top: 38px;
+}
+
+.wallet-card {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    padding: 28px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.wallet-card__title {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.wallet-card__container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 63px);
+    gap: 18px;
+    justify-content: center;
+}
+
+.wallet-card__wrapper-img {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    background: #f2f2fa;
+}
+
+.wallet-card__wrapper-img:hover {
+    background: #f9ea63;
+}
+
+.wallet-card__money {
+    position: absolute;
+    top: -35px;
+    right: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+}
