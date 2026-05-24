@@ -987,5 +987,85 @@ Payment
 }
 
 .blog-bottom__link:hover {
-    color: #7264D6;
+    color: #7264d6;
+}
+
+/* ========= App =========== */
+.app {
+    margin-top: 160px;
+}
+
+.app__inner {
+    position: relative;
+    text-align: center;
+    border-radius: 24px;
+    background: #7264d6;
+    padding: 100px 367px;
+}
+
+.app__eyebrow {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.app__eyebrow::before {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.app__heading {
+    margin-top: 12px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.app__desc {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.app__ctn {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    column-gap: 16px;
+}
+
+.app__decor-img {
+    position: absolute;
+}
+
+.app__decor-img:nth-child(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.app__decor-img:nth-child(2) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.app__decor-img:nth-child(3) {
+    top: 49px;
+    right: 112px;
+}
+
+.app__decor-img:nth-child(4) {
+    bottom: 49px;
+    right: 166px;
 }
